@@ -1,0 +1,153 @@
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+#home {
+    --first-color: #f5a6ea;
+    --second-color: #fffd84;    
+    --purple: rgb(174, 131, 255);
+}
+
+html,body {
+    padding: 0;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0.2em;
+    padding-bottom: 0.2em;
+    color: var(--first-color);
+}
+
+h2{
+    color: rgb(146, 0, 68);
+}
+p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+body {
+    display: flex;
+}
+.wrap {
+    left: 280px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 95%;
+}
+.center header {
+    background-color: var(--second-color);
+    color: white;
+}
+header {
+    flex: 0 0 40px;
+    justify-content: center; 
+    padding: 10px;
+}
+article nav {
+    background-color: transparent;
+}
+article nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+article nav a {
+    color: rgb(146, 0, 68);
+    text-decoration: none;
+    font-size: 20px;
+}
+.center article nav a:hover {
+    text-decoration: underline
+}
+nav {
+    background-color: #f0f0f0;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+nav ul li{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.center section {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+figure.hero {
+    position:relative;
+    height: 0;
+    padding-left: 0;
+    padding-bottom: 50%;
+    overflow: hidden;
+    margin: 0;
+}
+figure.hero img {
+    float: left;
+    position: relative;
+    right: -30%;
+    max-width: 40%;
+} 
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--second-color);
+}
+
+main {
+    min-height: 500px;
+}
+article {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-column-gap: 20px;
+    padding-bottom: 100px;
+}
+
+article > * {
+    grid-column: 2;
+    min-width: 0;
+}
+
+article > figure {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+hr {
+    background-color: var(--first-color);
+    height: 5px;
+    width: 100%;
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.line-numbers a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 1em;
+}
